@@ -6,12 +6,15 @@
  *	LICENSE file in the root directory of this source tree
  */
 
-using UnityEngine;
+namespace Andtech {
 
-public class Example : MonoBehaviour {
+	/// <summary>
+	/// Receive pool lifecycle callbacks.
+	/// </summary>
+	public interface IPoolObserver {
 
-	void Start() {
-		Debug.Log("Hello world");
+		void OnSpawned();
+
+		void OnDespawned();
 	}
 }
-

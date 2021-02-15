@@ -1,17 +1,9 @@
 {
-	"name": "com.<COMPANY>.<NAME>",
-	"version": "1.0.0",
-	"displayName": "<DISPLAY_NAME>",
-	"description": "<DESCRIPTION>",
+	"name": "com.andtech.pool-manager-wrapper",
+	"version": "0.1.0",
+	"displayName": "Pool Manager Wrapper",
+	"description": "Wrapper API for Pool Manager",
 	"author": {
-		"name": "<NAME>",
-		"email": "<EMAIL>"
-	},
-	"samples": [
-		{
-			"displayName": "<DISPLAY_NAME>",
-			"Description": "<DESCRIPTION>",
-			"path": "Samples~/<SAMPLE>"
-		}
-	]
+		"name": "AndrewMJordan"
+	}
 }
