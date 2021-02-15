@@ -1,4 +1,4 @@
-# Version 0.1.1
+# Version 0.1.2
 name: UPM Deployment
 
 env:
@@ -28,7 +28,7 @@ jobs:
 
       - name: Initialize Variables
         run: |
-          version=$(goo package get-version $PACKAGE_ROOT)
+          version=$(goo package get-version "$PACKAGE_ROOT")
           echo "VERSION=$version" >> $GITHUB_ENV
 
       - name: Preprocess Package
