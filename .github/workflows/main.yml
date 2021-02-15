@@ -1,7 +1,8 @@
-name: UPM Deployment (v0.1.0)
+# Version 0.1.1
+name: UPM Deployment
 
 env:
-  PACKAGE_ROOT: "Pool Manager Wrapper/Assets/Pool Manager Wrapper"
+  PACKAGE_ROOT: "<PROJECT_NAME>/Assets/<PACKAGE_NAME>"
 
 on:
   push:
@@ -34,7 +35,7 @@ jobs:
         run: |
           if [ -e "preamble.txt" ]
           then
-            find $PACKAGE_ROOT \( -iname "*.cs" -o -iname "*.shader" \) | while read fname; do
+            find "$PACKAGE_ROOT" \( -iname "*.cs" -o -iname "*.shader" \) | while read fname; do
               cat "preamble.txt" | goo transform inject "${fname}"
             done
           fi
@@ -45,8 +46,8 @@ jobs:
             echo "in transfer function $1"
             if [ -e "$1" ]
             then
-              cp -n $1 $PACKAGE_ROOT
-              touch $PACKAGE_ROOT/$1.meta
+              cp -n "$1" "$PACKAGE_ROOT"
+              touch "$PACKAGE_ROOT/$1.meta"
             fi
           }
 
@@ -56,7 +57,7 @@ jobs:
 
       - name: Prepare Package
         run: |
-          cd $PACKAGE_ROOT
+          cd "$PACKAGE_ROOT"
 
           if [ -e "Samples" ]
           then
@@ -69,6 +70,6 @@ jobs:
         env:
           REPO: self
           BRANCH: upm
-          FOLDER: $PACKAGE_ROOT
+          FOLDER: "$PACKAGE_ROOT"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Deploy: {sha} (v${{env.VERSION}})"
