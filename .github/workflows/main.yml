@@ -2,7 +2,7 @@
 name: UPM Deployment
 
 env:
-  PACKAGE_ROOT: "<PROJECT_NAME>/Assets/<PACKAGE_NAME>"
+  PACKAGE_ROOT: "Pool Manager Wrapper/Assets/Pool Manager Wrapper"
 
 on:
   push:
