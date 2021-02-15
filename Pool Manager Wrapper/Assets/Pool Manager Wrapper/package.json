@@ -1,5 +1,5 @@
 {
-	"name": "com.andtech.pool-manager-wrapper>",
+	"name": "com.andtech.pool-manager-wrapper",
 	"version": "1.0.0",
 	"displayName": "Pool Manager Wrapper",
 	"description": "Wrapper API for Pool Manager",
