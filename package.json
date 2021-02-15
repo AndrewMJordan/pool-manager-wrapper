@@ -1,0 +1,17 @@
+{
+	"name": "com.<COMPANY>.<NAME>",
+	"version": "1.0.0",
+	"displayName": "<DISPLAY_NAME>",
+	"description": "<DESCRIPTION>",
+	"author": {
+		"name": "<NAME>",
+		"email": "<EMAIL>"
+	},
+	"samples": [
+		{
+			"displayName": "<DISPLAY_NAME>",
+			"Description": "<DESCRIPTION>",
+			"path": "Samples~/<SAMPLE>"
+		}
+	]
+}
