@@ -1,3 +1,5 @@
+> This repostiory has been deprecated in favor of [Unity's Object Pool](https://docs.unity3d.com/2021.1/Documentation/ScriptReference/Pool.ObjectPool_1.html).
+
 # Pool Manager Wrapper
 Wrapper API for [Pool Manager](https://assetstore.unity.com/packages/tools/utilities/poolmanager-1010).
 
